@@ -42,7 +42,7 @@ Use the OpenAI API to analyze the retrieved job description chunks and extract t
 ### 4. Second Approach: Skill Extraction Using NER, NLP, and OpenAI API
 
 #### Create Custom SpaCy Model:
-A blank SpaCy model called "nlp" is created, and a custom entity ruler with the label SKILL as the entity is added. The list of skills from "skills.csv" is loaded into this model to facilitate initial skill identification.
+We use NER (name entity recognition) to identify "SKILL" entity. A blank SpaCy model called "nlp" is created, and a custom entity ruler with the label SKILL as the entity is added. The list of skills from "skills.csv" is loaded into this model to facilitate initial skill identification.
 
 #### Create Training Data and Train a New SpaCy Model:
 To train a model capable of identifying new skills, the existing model is used to identify skills from the job descriptions, which are then formatted according to SpaCy's requirements to serve as training data. A new blank SpaCy model called "nlp2" is trained using this data. The pipelines from "nlp" and "nlp2" are combined to create the NER_Skill_Final model. This final model is used to extract a list of skills from job descriptions, and a dictionary is created to store the skills along with their respective counts.
