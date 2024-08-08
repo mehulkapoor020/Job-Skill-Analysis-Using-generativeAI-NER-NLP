@@ -1,6 +1,6 @@
 # Job Skill Analysis using Generative AI models and NER(NLP)
 
-[Code Link:](https://github.com/mehulkapoor020/Jobskill/blob/main/JobSkillAnalysis.ipynb)
+Code Link: [Job Skill Analysis:](https://github.com/mehulkapoor020/Jobskill/blob/main/JobSkillAnalysis.ipynb)
 
 ## Introduction
 In the rapidly evolving job market, staying updated with the latest technical skills is crucial for both job seekers. Analyzing job descriptions can provide valuable insights into the latest trends and skills required across various industries. This project aims to utilize LangChain, OpenAI's API, natural language processing (NLP), specifically Named Entity Recognition (NER), to identify the technical skills from job descriptions and get an overview of the current market.
